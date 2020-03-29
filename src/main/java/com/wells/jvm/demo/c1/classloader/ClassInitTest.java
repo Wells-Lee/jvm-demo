@@ -90,6 +90,8 @@ class NewObjectArrTest{
 /**
  * 当把 public static int count2 = 0; 代码放到构造方法之前，count1输出为1，count2输出为1: 先对 count2 进行链接阶段的准备，赋默认值0 -> 初始化: count2=0 -> 执行构造方法: count2++
  * 当把 public static int count2 = 0; 代码放到构造方法之后，count1输出为1，count2输出为0: 先对 count2 进行链接阶段的准备，赋默认值0 -> count2++ -> 初始化: count2=0
+ *
+ * 造成上面原因的是：类执行的时候，按照编译后的字节码指令指令(按照顺序)
  */
 class Singleton{
     public static int count1;
