@@ -47,5 +47,5 @@
 ## 1.6、运行时常量池
 编译期间已经开辟好的
 
-## 1.6、直接内存(Direct Memory)
+## 1.7、直接内存(Direct Memory)
 与Java NIO密切相关，JVM通过堆上的DirectByteBuffer来操作直接内存
